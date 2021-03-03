@@ -338,3 +338,6 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/Assets/2D SpritePack/2DPlatformerPack
+/Library/PackageCache/com.unity.2d.animation@4.2.6
+/Assets/2D SpritePack/Demo/Prefabs
