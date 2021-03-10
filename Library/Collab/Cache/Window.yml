@@ -18,9 +18,10 @@ MonoBehaviour:
     - Assets/2D SpritePack/Demo/Scripts/CameraControlla.cs.meta
     - Assets/2D SpritePack/Demo/Scripts/Player.cs
     - Assets/2D SpritePack/Demo/Scripts/Player.cs.meta
+    - Assets/CrossFaith.unity
     - Assets/PlayerController2D.cs
     - 
-    m_Values: 000000000000
+    m_Values: 00000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

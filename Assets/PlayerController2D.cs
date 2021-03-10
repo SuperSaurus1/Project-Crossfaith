@@ -8,10 +8,11 @@ public class PlayerController2D : MonoBehaviour
     Rigidbody2D rb2d;
     SpriteRenderer spriteRenderer;
     bool isGrounded;
-    //rb2d.velocity.x;
-    //variable rb2d.velocity.x = 2
+    
     [SerializeField]
     Transform GroundCheck;
+
+        
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,9 @@ public class PlayerController2D : MonoBehaviour
     
     private void FixedUpdate()
     {
+        int speed = 2;
+        //var maxSpeed = currentMaxSpeed;
+        //var acc = maxSpeed;
         if (Physics2D.Linecast(transform.position, GroundCheck.position, 1 << LayerMask.NameToLayer("Ground")))
         {
          isGrounded = true;
@@ -38,7 +42,7 @@ public class PlayerController2D : MonoBehaviour
         {
             if (rb2d.velocity.x <= 10)
             {
-                rb2d.velocity = new Vector2(2, rb2d.velocity.y);
+                rb2d.velocity = new Vector2(speed, rb2d.velocity.y);
                 spriteRenderer.flipX = false;
                 
             }
@@ -51,7 +55,7 @@ public class PlayerController2D : MonoBehaviour
                
                 else if (Input.GetKey("a") || Input.GetKey("left"))
                 {
-            rb2d.velocity = new Vector2(-2, rb2d.velocity.y);
+            rb2d.velocity = new Vector2(-speed, rb2d.velocity.y);
                     spriteRenderer.flipX = true;
                 }
 
