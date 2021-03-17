@@ -20,8 +20,10 @@ MonoBehaviour:
     - Assets/2D SpritePack/Demo/Scripts/Player.cs.meta
     - Assets/CrossFaith.unity
     - Assets/PlayerController2D.cs
+    - Packages/manifest.json
+    - Packages/packages-lock.json
     - 
-    m_Values: 00000000000000
+    m_Values: 000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
